@@ -62,9 +62,9 @@
 \frametitle{4.1节主要内容}
 \begin{itemize}
     \item 度量空间和Lipschitz函数
-    \item 2个例子：Gaussian concentration 和 McDiarmid's inequality 
+    \item 2个例子：Gaussian集中和McDiarmid不等式
     \item Bobkov-G{\" o}tze定理
-    \item 例子：Pinsker's inequality
+    \item 例子：Pinsker不等式
 \end{itemize}
 \end{frame}
 
@@ -87,13 +87,13 @@ $$
 
 \end{frame}
 
-\begin{frame}{例子：Gaussian concentration}
+\begin{frame}{例子：Gaussian集中（concentration）}
 
-\textbf{定理3.25（Gaussian concentration）} $X_1, \cdots, X_n$ 独立同分布 $N(0, 1)$，则对于任意函数 $f$，随机变量 $f(X_1, \cdots, X_n)$ 是 $\|\|\nabla f\|^2\|_{\infty}$-subgaussian（$\sigma^2$ 用梯度表示）
+\textbf{定理3.25（Gaussian集中）} $X_1, \cdots, X_n$ 独立同分布 $N(0, 1)$，则对于任意函数 $f$，随机变量 $f(X_1, \cdots, X_n)$ 是 $\|\|\nabla f\|^2\|_{\infty}$-亚高斯（$\sigma^2$ 用梯度表示）
 
 \quad
 
-\textbf{重新表述：} $X_1, \cdots, X_n$ 独立同分布 $N(0, 1)$，则只要 $f\in{\rm Lip}(\mathbb{R}^{n}, \|\cdot\|)$，那么$f(X_1, \cdots, X_n)$ 是 $1$-subgaussian（$\sigma^2$ 用Lipschitz性质表示）
+\textbf{重新表述：} $X_1, \cdots, X_n$ 独立同分布 $N(0, 1)$，则只要 $f\in{\rm Lip}(\mathbb{R}^{n}, \|\cdot\|)$，那么$f(X_1, \cdots, X_n)$ 是 $1$-亚高斯（$\sigma^2$ 用Lipschitz性质表示）
 
 \quad
 
@@ -101,7 +101,7 @@ $$
 
 \end{frame}
 
-\begin{frame}{例子：McDiarmid's inequality}
+\begin{frame}{例子：McDiarmid不等式}
 
 \textbf{“discrete derivative”}
 $$
@@ -128,13 +128,13 @@ $$
 
 \end{frame}
 
-\begin{frame}{例子：McDiarmid's inequality（续）}
+\begin{frame}{例子：McDiarmid不等式（续）}
 
-\textbf{定理3.11（McDiarmid's inequality）} $X_i\in\mathbb{X}_i$ 相互独立，则对于任意函数 $f$，随机变量 $f(X_1, \cdots, X_n)$ 是 $\frac{1}{4} \sum_{k=1}^{n} \|D_k f\|_{\infty}^2$-subgaussian（$\sigma^2$ 用“离散导数”表示）
+\textbf{定理3.11（McDiarmid不等式）} $X_i\in\mathbb{X}_i$ 相互独立，则对于任意函数 $f$，随机变量 $f(X_1, \cdots, X_n)$ 是 $\frac{1}{4} \sum_{k=1}^{n} \|D_k f\|_{\infty}^2$-亚高斯（$\sigma^2$ 用“离散导数”表示）
 
 \quad
 
-\textbf{重新表述：} $X_i\in\mathbb{X}_i$ 相互独立，则只要 $f\in{\rm Lip}(\mathbb{X}_1\times\cdots\times\mathbb{X}_n, d_c)$，那么$f(X_1, \cdots, X_n)$ 是 $\cfrac{1}{4}\|c\|^2$-subgaussian（$\sigma^2$ 用Lipschitz性质表示）
+\textbf{重新表述：} $X_i\in\mathbb{X}_i$ 相互独立，则只要 $f\in{\rm Lip}(\mathbb{X}_1\times\cdots\times\mathbb{X}_n, d_c)$，那么$f(X_1, \cdots, X_n)$ 是 $\cfrac{1}{4}\|c\|^2$-亚高斯（$\sigma^2$ 用Lipschitz性质表示）
 
 \quad
 
@@ -166,11 +166,11 @@ $$
 
 \end{frame}
 
-\begin{frame}{例子：Pinsker's inequality}
+\begin{frame}{例子：Pinsker不等式}
 
 \textbf{trivial metric} $d(x, y) := \mathbf{1}_{x\neq y}$
 
-\textbf{total variation distance（总变差）}
+\textbf{总变差（total variation distance）}
 
 $$
 \|\mu-\nu\|_{\rm TV} := \sup_{0\le f\le 1} \left|\int fd\mu - \int fd\nu\right| = W_1(\mu, \nu)
@@ -182,7 +182,7 @@ $$
 \|\mu-\nu\|_{\rm TV} \le \sqrt{\cfrac{1}{2}D(\nu\|\mu)}
 $$
 
-\textbf{引理3.6 (Hoeffding引理)} 有界 $f(X)$ 是 $\frac{1}{4}(\sup f - \inf f)$-subgaussian
+\textbf{引理3.6 (Hoeffding引理)} 有界 $f(X)$ 是 $\frac{1}{4}(\sup f - \inf f)$-亚高斯
     
 \end{frame}
 
@@ -200,9 +200,9 @@ $$
 \begin{itemize}
     \item 对偶（duality）和运输（transportation）
     \begin{itemize}
-        \item Monge-Kantorovich duality
-        \item 例子：total variation
-        \item transportation inequality
+        \item Monge-Kantorovich对偶
+        \item 例子：总变差（total variation）
+        \item 运输不等式（transportation inequality）
     \end{itemize}
     
     \item 张量化（tensorization）
@@ -214,9 +214,9 @@ $$
 
 \end{frame}
 
-\begin{frame}{Monge-Kantorovich duality}
+\begin{frame}{Monge-Kantorovich对偶}
 
-\textbf{Coupling（耦合）} $\mathcal{C}(\mu, \nu)$ 是以 $\mu, \nu$ 为边缘分布的联合分布组成的集合
+\textbf{耦合（Coupling）} $\mathcal{C}(\mu, \nu)$ 是以 $\mu, \nu$ 为边缘分布的联合分布组成的集合
 
 \begin{center}
 \includegraphics[width=1.0\textwidth, frame]{figures/4-13-thm.png}
@@ -226,7 +226,7 @@ optimal transport问题，推土机距离，把两个分布看成两个沙堆，
 
 \end{frame}
 
-\begin{frame}{例子：total variation}
+\begin{frame}{例子：总变差（total variation）}
 
 \begin{center}
 \includegraphics[width=1.0\textwidth, frame]{figures/4-14-eg.png}
@@ -243,15 +243,15 @@ optimal transport问题，推土机距离，把两个分布看成两个沙堆，
 
 \end{frame}
 
-\begin{frame}{transportation inequality}
+\begin{frame}{运输不等式（transportation inequality）}
 
 把\textbf{Monge-Kantorovich duality}代入\textbf{Bobkov-G{\"o}tze定理}，以下1，2等价
 
-1. $X\sim\mu, \forall f\in{\rm Lip}(\mathbb{X})\ f(X)$ 是 $\sigma^2$-subgaussian
+1. $X\sim\mu, \forall f\in{\rm Lip}(\mathbb{X})\ f(X)$ 是 $\sigma^2$-亚高斯
 
 2. $\forall \nu\ W_1(\mu, \nu) = \inf_{\mathbf{M} \in \mathcal{C}(\mu,\nu)} \mathbb{E}_{\mathbf{M}} [d(X, Y)] \le \sqrt{2\sigma^{2}D(\nu\|\mu)}$
 
-条件2中的不等式称作\textbf{运输不等式transportation cost inequality}或\textbf{$T_1$-inequality}
+条件2中的不等式称作\textbf{运输代价不等式（transportation cost inequality）}或\textbf{$T_1$-不等式}
 
 \end{frame}
 
@@ -263,7 +263,7 @@ optimal transport问题，推土机距离，把两个分布看成两个沙堆，
 
 \begin{itemize}
     \item 当 $\varphi(x)=x^2, w_i(x, y) = d_i(x, y)$ 时对应运输不等式，左边是Wassersein距离的上界（Cauchy-Schwarz不等式）
-    \item 通过 $T_1$ 运输不等式把 $1$ 维subgaussian和 $n$ 维subgaussian联系起来
+    \item 通过 $T_1$ 运输不等式把 $1$ 维亚高斯和 $n$ 维亚高斯联系起来
 \end{itemize}
 
 \end{frame}
@@ -313,7 +313,7 @@ optimal transport问题，推土机距离，把两个分布看成两个沙堆，
 \end{center}
 
 \begin{itemize}
-    \item \textbf{双侧}：$f$ 可以换成 $-f$，符合subgaussian定义，$\sigma^2=\frac{1}{4} \sum_i^n c_i^2$
+    \item \textbf{双侧}：$f$ 可以换成 $-f$，符合亚高斯定义，$\sigma^2=\frac{1}{4} \sum_i^n c_i^2$
     \item 上述条件 $\iff$ Lipschitz条件
 \end{itemize}
 
@@ -333,7 +333,7 @@ optimal transport问题，推土机距离，把两个分布看成两个沙堆，
 
 \begin{itemize}
     \item \textbf{双侧}：若 $D_i^+ f(x)\le c_i(x)$ 且 $D_i^- f(x)\le c_i(x)$，则 $\sigma^2=2\left\|\sum_i^n c_i^2\right\|_{\infty}$
-    \item \textbf{单侧}：有时 $D_i^+f, D_i^-f$ 不都有上界，$f$ 不能换成 $-f$，不能得到subgaussian
+    \item \textbf{单侧}：有时 $D_i^+f, D_i^-f$ 不都有上界，$f$ 不能换成 $-f$，不能得到亚高斯
     \item 上述条件 $\impliedby$ \textbf{“单侧Lipschitz条件”}
 \end{itemize}
 
@@ -345,7 +345,7 @@ optimal transport问题，推土机距离，把两个分布看成两个沙堆，
 
 \begin{frame}{Talagrand定理}
 
-由\textbf{单侧}Lipschitz条件得到\textbf{双侧}subgaussian
+由\textbf{单侧}Lipschitz条件得到\textbf{双侧}亚高斯
 
 \begin{center}
     \includegraphics[width=1.0\textwidth, frame]{figures/4-20-thm.png}
