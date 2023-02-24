@@ -8,8 +8,6 @@
 
 ### 度量空间和Lipschitz函数
 
-**Def 4.1 Lipschitz function**
-
 ### 例子：Gaussian concentration
 
 **Gaussian concentration**
@@ -22,7 +20,7 @@
 
 ### 例子：McDiarmid's inequality
 
-**"Def. discrete derivative"**
+**Def. "discrete derivative"**
 
 $$
 D_i f(x) := \sup_{z} f(x_1,\cdots,x_{i-1},z,x_{i+1},\cdots,x_n) - \inf_{z} f(x_1,\cdots,x_{i-1},z,x_{i+1},\cdots,x_n)
@@ -210,4 +208,30 @@ $$
 
 ## 4.3 Talagrand's concentration inequality
 
+### 单侧Lip
+
+### Talagrand
+
+### 例子
+
+前几章算过
+
+### 推论
+
+### Talagrand证明
+
+略
+
 ## 4.4 Dimension-free concentration and the T2-inequality
+
+### $T_2$ 不等式
+
+把Bobkov-G{"o}tze定理的第2个条件，也就是运输不等式中的 $W_1$ 换成 $W_2$
+
+从Marton定理得到推论
+
+### 对比
+
+### Gozlan定理
+
+条件限制更为苛刻，$n$ 个随机变量服从相同分布 $\mu$
